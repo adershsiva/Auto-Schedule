@@ -1,0 +1,37 @@
+name: Automated Timetable Sync
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC (06:00 / 07:00 German time)
+    - cron: '0 5 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch updated timetable (All Groups)
+        run: |
+          python webuntis2ics.py "https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?date=2026-11-02&entityId=44402" -w 15 -o timetable_ICS3.ics
+
+      - name: Fetch updated timetable (Group 1 Only)
+        run: |
+          python webuntis2ics.py "https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?date=2026-11-02&entityId=44402" -w 15 -g 1 -o timetable_ICS3_group1.ics
+
+      - name: Commit and push if calendar changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add timetable_ICS3.ics timetable_ICS3_group1.ics
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync timetable [skip ci]" && git push)
