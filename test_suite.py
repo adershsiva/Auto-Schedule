@@ -5,9 +5,26 @@ Run: python test_suite.py
 
 import os
 import unittest
-from webuntis2ics import parse_webuntis_url, convert_to_ics, format_display_name
+from webuntis2ics import parse_webuntis_url, convert_to_ics, format_display_name, validate_timetable_link
 
 class TestWebUntis2ICS(unittest.TestCase):
+
+    def test_link_validation_invalid_urls(self):
+        # Case 1: Empty
+        valid, msg, info = validate_timetable_link("")
+        self.assertFalse(valid)
+        self.assertIn("No URL provided", msg)
+
+        # Case 2: Missing school
+        valid, msg, info = validate_timetable_link("https://othr.webuntis.com/WebUntis#/basic/timetablePublic/class?entityId=44402")
+        self.assertFalse(valid)
+        self.assertIn("school", msg.lower())
+
+        # Case 3: Missing entityId
+        valid, msg, info = validate_timetable_link("https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class")
+        self.assertFalse(valid)
+        self.assertIn("entityid", msg.lower())
+        print(" [PASS] Link validator catches invalid URL structures.")
 
     def test_url_parser(self):
         url = "https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?date=2026-11-02&entityId=44402"

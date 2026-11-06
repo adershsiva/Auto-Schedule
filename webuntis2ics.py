@@ -115,8 +115,13 @@ class WebUntisClient:
         """Initializes session cookies by visiting the school portal page."""
         init_url = f"{self.base_url}/WebUntis/?school={urllib.parse.quote(self.school)}"
         req = urllib.request.Request(init_url, headers=self.headers)
-        with self.opener.open(req) as resp:
-            resp.read()
+        try:
+            with self.opener.open(req, timeout=12) as resp:
+                resp.read()
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"Could not reach school portal (HTTP {e.code}: {e.reason})")
+        except urllib.error.URLError as e:
+            raise RuntimeError(f"Could not connect to {self.base_url}: {e.reason}")
 
     def fetch_week(self, entity_type: int, entity_id: int, date_str: str):
         """
@@ -127,11 +132,58 @@ class WebUntisClient:
             f"?elementType={entity_type}&elementId={entity_id}&date={date_str}&formatId=3"
         )
         req = urllib.request.Request(api_url, headers=self.headers)
-        with self.opener.open(req) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        
-        result_data = data.get("data", {}).get("result", {}).get("data", {})
+        try:
+            with self.opener.open(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"WebUntis server returned HTTP {e.code}: {e.reason}")
+        except urllib.error.URLError as e:
+            raise RuntimeError(f"Connection failed: {e.reason}")
+        except Exception as e:
+            raise RuntimeError(f"Request failed: {str(e)}")
+
+        if "error" in data:
+            err_msg = data["error"].get("message") if isinstance(data["error"], dict) else str(data["error"])
+            raise RuntimeError(f"WebUntis API error: {err_msg}")
+
+        result_data = data.get("data", {}).get("result", {}).get("data")
+        if result_data is None:
+            raise RuntimeError("No timetable data found. Check that this timetable is public.")
+
         return result_data
+
+def validate_timetable_link(url: str) -> tuple[bool, str, dict]:
+    """
+    Validates if the provided WebUntis timetable link is valid, reachable, and accessible.
+    Returns (is_valid: bool, status_message: str, info_dict: dict | None)
+    """
+    if not url or not url.strip():
+        return False, "No URL provided.", None
+
+    try:
+        info = parse_webuntis_url(url.strip())
+    except Exception as e:
+        return False, f"Invalid WebUntis URL: {str(e)}", None
+
+    try:
+        client = WebUntisClient(info["base_url"], info["school"])
+    except Exception as e:
+        return False, f"Could not connect to {info['base_url']} for school '{info['school']}': {str(e)}", info
+
+    try:
+        probe_data = client.fetch_week(info["entity_type"], info["entity_id"], info["start_date"])
+    except Exception as e:
+        return False, f"Failed to retrieve timetable for entity ID {info['entity_id']}: {str(e)}", info
+
+    # Look up human-readable name of the class / entity
+    target_name = None
+    for el in probe_data.get("elements", []):
+        if el.get("type") == info["entity_type"] and el.get("id") == info["entity_id"]:
+            target_name = format_display_name(el.get("name", ""), el.get("longName", ""))
+            break
+
+    name_label = f" for '{target_name}'" if target_name else ""
+    return True, f"Link verified successfully{name_label} (School: {info['school']}, ID: {info['entity_id']}).", info
 
 def escape_ics(text: str) -> str:
     """Escapes special characters for iCalendar format."""
@@ -275,13 +327,18 @@ def convert_to_ics(all_periods: list, elements_map: dict, calendar_name: str = "
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
 
-def fetch_calendar_ics(url: str, weeks: int = 15, group: str = None, reminder_minutes: int = 15) -> tuple[str, str]:
+def fetch_calendar_ics(url: str, weeks: int = 15, group: str = None, reminder_minutes: int = 15, pre_validated_info: dict = None) -> tuple[str, str]:
     """
     Fetches the timetable and returns (ics_content_string, class_name).
     """
-    info = parse_webuntis_url(url)
-    client = WebUntisClient(info["base_url"], info["school"])
+    if pre_validated_info:
+        info = pre_validated_info
+    else:
+        is_valid, msg, info = validate_timetable_link(url)
+        if not is_valid:
+            raise ValueError(msg)
 
+    client = WebUntisClient(info["base_url"], info["school"])
     start_dt = datetime.strptime(info["start_date"], "%Y-%m-%d")
     start_monday = start_dt - timedelta(days=start_dt.weekday())
 
@@ -317,8 +374,20 @@ def fetch_calendar_ics(url: str, weeks: int = 15, group: str = None, reminder_mi
     return ics_content, target_class_name or str(info['entity_id'])
 
 def sync_timetable(url: str, weeks: int = 15, output_filename: str = None, group: str = None, reminder_minutes: int = 15):
-    print(f"Fetching timetable ({weeks} weeks)...")
-    ics_content, class_name = fetch_calendar_ics(url, weeks=weeks, group=group, reminder_minutes=reminder_minutes)
+    print(f"Checking timetable link: {url}...")
+    is_valid, msg, info = validate_timetable_link(url)
+    if not is_valid:
+        print(f"\n[ERROR] Link verification failed!")
+        print(f" -> {msg}\n")
+        print("Please check that:")
+        print(" 1. The URL is a public WebUntis timetable link.")
+        print(" 2. It contains '?school=...' and '#/...&entityId=...'")
+        print(" 3. The timetable is public and accessible without a login.")
+        return None
+
+    print(f"[OK] {msg}")
+    print(f"\nFetching timetable ({weeks} weeks)...")
+    ics_content, class_name = fetch_calendar_ics(url, weeks=weeks, group=group, reminder_minutes=reminder_minutes, pre_validated_info=info)
 
     if not output_filename:
         safe_name = re.sub(r'[^a-zA-Z0-9_\-]', '_', class_name)

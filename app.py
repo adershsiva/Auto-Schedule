@@ -7,8 +7,9 @@ Open: http://localhost:8000 in your browser to download or subscribe to your cal
 import http.server
 import socketserver
 import urllib.parse
+import json
 import re
-from webuntis2ics import fetch_calendar_ics
+from webuntis2ics import fetch_calendar_ics, validate_timetable_link
 
 PORT = 8000
 
@@ -188,15 +189,21 @@ HTML_PAGE = """<!DOCTYPE html>
         <form id="timetableForm" action="/download" method="GET">
             <div class="form-group">
                 <label for="url">WebUntis Public Timetable URL</label>
-                <input 
-                    type="url" 
-                    id="url" 
-                    name="url" 
-                    required 
-                    placeholder="https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?..."
-                    value="https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?date=2026-11-02&entityId=44402"
-                    oninput="updateLinks()"
-                >
+                <div style="display: flex; gap: 8px;">
+                    <input 
+                        type="url" 
+                        id="url" 
+                        name="url" 
+                        required 
+                        placeholder="https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?..."
+                        value="https://othr.webuntis.com/WebUntis?school=othr#/basic/timetablePublic/class?date=2026-11-02&entityId=44402"
+                        oninput="updateLinks()"
+                    >
+                    <button type="button" class="btn btn-subscribe" style="width: auto; padding: 0 16px; white-space: nowrap;" onclick="verifyLink()">
+                        🔍 Check Link
+                    </button>
+                </div>
+                <div id="urlStatus" style="font-size: 13px; margin-top: 6px; font-weight: 500; display: none;"></div>
                 <div class="helper-text">Supports class, teacher, subject, or room public links.</div>
             </div>
 
@@ -248,7 +255,8 @@ HTML_PAGE = """<!DOCTYPE html>
             const url = encodeURIComponent(document.getElementById('url').value.trim());
             const weeks = document.getElementById('weeks').value.trim() || '15';
             const group = encodeURIComponent(document.getElementById('group').value.trim());
-            let qs = `?url=${url}&weeks=${weeks}`;
+            const reminder = document.getElementById('reminder').value.trim() || '15';
+            let qs = `?url=${url}&weeks=${weeks}&reminder=${reminder}`;
             if (group) qs += `&group=${group}`;
             return qs;
         }
@@ -261,6 +269,29 @@ HTML_PAGE = """<!DOCTYPE html>
 
             document.getElementById('subscribeBtn').href = fullWebcal;
             document.getElementById('feedUrlText').innerText = fullHttp;
+        }
+
+        async function verifyLink() {
+            const url = document.getElementById('url').value.trim();
+            const statusDiv = document.getElementById('urlStatus');
+            if (!url) return;
+            statusDiv.style.display = 'block';
+            statusDiv.style.color = '#2563eb';
+            statusDiv.innerText = '⏳ Checking if link works...';
+            try {
+                const res = await fetch(`/api/check?url=${encodeURIComponent(url)}`);
+                const data = await res.json();
+                if (data.valid) {
+                    statusDiv.style.color = '#15803d';
+                    statusDiv.innerText = `✅ ${data.message}`;
+                } else {
+                    statusDiv.style.color = '#dc2626';
+                    statusDiv.innerText = `❌ ${data.message}`;
+                }
+            } catch (err) {
+                statusDiv.style.color = '#dc2626';
+                statusDiv.innerText = '❌ Failed to reach verification service.';
+            }
         }
 
         function copyFeedUrl() {
@@ -287,10 +318,27 @@ class TimetableHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(HTML_PAGE.encode("utf-8"))
             return
 
+        elif parsed.path == "/api/check":
+            params = urllib.parse.parse_qs(parsed.query)
+            target_url = params.get("url", [None])[0]
+            if not target_url:
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json")
+                self.end_headers()
+                self.wfile.write(json.dumps({"valid": False, "message": "Missing 'url' parameter."}).encode("utf-8"))
+                return
+            is_valid, msg, info = validate_timetable_link(target_url)
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"valid": is_valid, "message": msg}).encode("utf-8"))
+            return
+
         elif parsed.path == "/download" or parsed.path == "/calendar.ics":
             params = urllib.parse.parse_qs(parsed.query)
             target_url = params.get("url", [None])[0]
             weeks = int(params.get("weeks", [15])[0])
+            reminder = int(params.get("reminder", [15])[0])
             group = params.get("group", [None])[0]
             if group and group.strip() == "":
                 group = None
@@ -303,7 +351,7 @@ class TimetableHandler(http.server.BaseHTTPRequestHandler):
                 return
 
             try:
-                ics_data, class_name = fetch_calendar_ics(target_url, weeks=weeks, group=group)
+                ics_data, class_name = fetch_calendar_ics(target_url, weeks=weeks, group=group, reminder_minutes=reminder)
                 safe_name = re.sub(r'[^a-zA-Z0-9_\-]', '_', class_name)
                 group_suffix = f"_group{group}" if group else ""
                 filename = f"timetable_{safe_name}{group_suffix}.ics"
@@ -313,6 +361,11 @@ class TimetableHandler(http.server.BaseHTTPRequestHandler):
                 self.send_header("Content-Disposition", f'attachment; filename="{filename}"')
                 self.end_headers()
                 self.wfile.write(ics_data.encode("utf-8"))
+            except ValueError as ve:
+                self.send_response(400)
+                self.send_header("Content-Type", "text/plain; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(f"Link Error: {str(ve)}".encode("utf-8"))
             except Exception as e:
                 self.send_response(500)
                 self.send_header("Content-Type", "text/plain; charset=utf-8")
