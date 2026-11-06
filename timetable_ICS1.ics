@@ -1,0 +1,1246 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WebUntis2ICS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WebUntis - ICS1
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:untis-5951021@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261105T100000
+DTEND;TZID=Europe/Berlin:20261105T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951225@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261103T081500
+DTEND;TZID=Europe/Berlin:20261103T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951228@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261105T081500
+DTEND;TZID=Europe/Berlin:20261105T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951291@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261105T114500
+DTEND;TZID=Europe/Berlin:20261105T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953940@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261105T100000
+DTEND;TZID=Europe/Berlin:20261105T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953874@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261103T114500
+DTEND;TZID=Europe/Berlin:20261103T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953877@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261104T100000
+DTEND;TZID=Europe/Berlin:20261104T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953976@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261105T114500
+DTEND;TZID=Europe/Berlin:20261105T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959928@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261104T114500
+DTEND;TZID=Europe/Berlin:20261104T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960486@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261104T154500
+DTEND;TZID=Europe/Berlin:20261104T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960522@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261103T140000
+DTEND;TZID=Europe/Berlin:20261103T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960564@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261104T140000
+DTEND;TZID=Europe/Berlin:20261104T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966695@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261102T140000
+DTEND;TZID=Europe/Berlin:20261102T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966698@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261102T154500
+DTEND;TZID=Europe/Berlin:20261102T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951024@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261112T100000
+DTEND;TZID=Europe/Berlin:20261112T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951231@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261110T081500
+DTEND;TZID=Europe/Berlin:20261110T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951234@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261112T081500
+DTEND;TZID=Europe/Berlin:20261112T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951294@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261112T114500
+DTEND;TZID=Europe/Berlin:20261112T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953943@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261112T100000
+DTEND;TZID=Europe/Berlin:20261112T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953880@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261110T114500
+DTEND;TZID=Europe/Berlin:20261110T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953883@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261111T100000
+DTEND;TZID=Europe/Berlin:20261111T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953979@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261112T114500
+DTEND;TZID=Europe/Berlin:20261112T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959931@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261111T114500
+DTEND;TZID=Europe/Berlin:20261111T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960489@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261111T154500
+DTEND;TZID=Europe/Berlin:20261111T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960525@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261110T140000
+DTEND;TZID=Europe/Berlin:20261110T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960567@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261111T140000
+DTEND;TZID=Europe/Berlin:20261111T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966701@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261109T140000
+DTEND;TZID=Europe/Berlin:20261109T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966704@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261109T154500
+DTEND;TZID=Europe/Berlin:20261109T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951027@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261119T100000
+DTEND;TZID=Europe/Berlin:20261119T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951237@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261117T081500
+DTEND;TZID=Europe/Berlin:20261117T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951240@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261119T081500
+DTEND;TZID=Europe/Berlin:20261119T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951297@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261119T114500
+DTEND;TZID=Europe/Berlin:20261119T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953946@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261119T100000
+DTEND;TZID=Europe/Berlin:20261119T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953886@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261117T114500
+DTEND;TZID=Europe/Berlin:20261117T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953889@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261118T100000
+DTEND;TZID=Europe/Berlin:20261118T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953982@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261119T114500
+DTEND;TZID=Europe/Berlin:20261119T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959934@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261118T114500
+DTEND;TZID=Europe/Berlin:20261118T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960492@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261118T154500
+DTEND;TZID=Europe/Berlin:20261118T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960528@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261117T140000
+DTEND;TZID=Europe/Berlin:20261117T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960570@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261118T140000
+DTEND;TZID=Europe/Berlin:20261118T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966707@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261116T140000
+DTEND;TZID=Europe/Berlin:20261116T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966710@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261116T154500
+DTEND;TZID=Europe/Berlin:20261116T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951030@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261126T100000
+DTEND;TZID=Europe/Berlin:20261126T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951243@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261124T081500
+DTEND;TZID=Europe/Berlin:20261124T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951246@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261126T081500
+DTEND;TZID=Europe/Berlin:20261126T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951300@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261126T114500
+DTEND;TZID=Europe/Berlin:20261126T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953949@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261126T100000
+DTEND;TZID=Europe/Berlin:20261126T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953892@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261124T114500
+DTEND;TZID=Europe/Berlin:20261124T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953895@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261125T100000
+DTEND;TZID=Europe/Berlin:20261125T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953985@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261126T114500
+DTEND;TZID=Europe/Berlin:20261126T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959937@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261125T114500
+DTEND;TZID=Europe/Berlin:20261125T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960495@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261125T154500
+DTEND;TZID=Europe/Berlin:20261125T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960531@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261124T140000
+DTEND;TZID=Europe/Berlin:20261124T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960573@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261125T140000
+DTEND;TZID=Europe/Berlin:20261125T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966713@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261123T140000
+DTEND;TZID=Europe/Berlin:20261123T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966716@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261123T154500
+DTEND;TZID=Europe/Berlin:20261123T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951033@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261203T100000
+DTEND;TZID=Europe/Berlin:20261203T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951249@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261201T081500
+DTEND;TZID=Europe/Berlin:20261201T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951252@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261203T081500
+DTEND;TZID=Europe/Berlin:20261203T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951303@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261203T114500
+DTEND;TZID=Europe/Berlin:20261203T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953952@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261203T100000
+DTEND;TZID=Europe/Berlin:20261203T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953898@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261201T114500
+DTEND;TZID=Europe/Berlin:20261201T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953901@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261202T100000
+DTEND;TZID=Europe/Berlin:20261202T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953988@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261203T114500
+DTEND;TZID=Europe/Berlin:20261203T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959940@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261202T114500
+DTEND;TZID=Europe/Berlin:20261202T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960498@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261202T154500
+DTEND;TZID=Europe/Berlin:20261202T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960534@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261201T140000
+DTEND;TZID=Europe/Berlin:20261201T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960576@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261202T140000
+DTEND;TZID=Europe/Berlin:20261202T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966719@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261130T140000
+DTEND;TZID=Europe/Berlin:20261130T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966722@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261130T154500
+DTEND;TZID=Europe/Berlin:20261130T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951036@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261210T100000
+DTEND;TZID=Europe/Berlin:20261210T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951255@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261208T081500
+DTEND;TZID=Europe/Berlin:20261208T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951258@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261210T081500
+DTEND;TZID=Europe/Berlin:20261210T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951306@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261210T114500
+DTEND;TZID=Europe/Berlin:20261210T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953955@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261210T100000
+DTEND;TZID=Europe/Berlin:20261210T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953904@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261208T114500
+DTEND;TZID=Europe/Berlin:20261208T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953907@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261209T100000
+DTEND;TZID=Europe/Berlin:20261209T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953991@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261210T114500
+DTEND;TZID=Europe/Berlin:20261210T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959943@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261209T114500
+DTEND;TZID=Europe/Berlin:20261209T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960501@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261209T154500
+DTEND;TZID=Europe/Berlin:20261209T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960537@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261208T140000
+DTEND;TZID=Europe/Berlin:20261208T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960579@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261209T140000
+DTEND;TZID=Europe/Berlin:20261209T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966725@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261207T140000
+DTEND;TZID=Europe/Berlin:20261207T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966728@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261207T154500
+DTEND;TZID=Europe/Berlin:20261207T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951039@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261217T100000
+DTEND;TZID=Europe/Berlin:20261217T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951261@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261215T081500
+DTEND;TZID=Europe/Berlin:20261215T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951264@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261217T081500
+DTEND;TZID=Europe/Berlin:20261217T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951309@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261217T114500
+DTEND;TZID=Europe/Berlin:20261217T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953958@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261217T100000
+DTEND;TZID=Europe/Berlin:20261217T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953910@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261215T114500
+DTEND;TZID=Europe/Berlin:20261215T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953913@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261216T100000
+DTEND;TZID=Europe/Berlin:20261216T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953994@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261217T114500
+DTEND;TZID=Europe/Berlin:20261217T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959946@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261216T114500
+DTEND;TZID=Europe/Berlin:20261216T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960504@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261216T154500
+DTEND;TZID=Europe/Berlin:20261216T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960540@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261215T140000
+DTEND;TZID=Europe/Berlin:20261215T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960582@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261216T140000
+DTEND;TZID=Europe/Berlin:20261216T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966731@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261214T140000
+DTEND;TZID=Europe/Berlin:20261214T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966734@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261214T154500
+DTEND;TZID=Europe/Berlin:20261214T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951267@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261222T081500
+DTEND;TZID=Europe/Berlin:20261222T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953916@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261222T114500
+DTEND;TZID=Europe/Berlin:20261222T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960543@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261222T140000
+DTEND;TZID=Europe/Berlin:20261222T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966737@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261221T140000
+DTEND;TZID=Europe/Berlin:20261221T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966740@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20261221T154500
+DTEND;TZID=Europe/Berlin:20261221T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951042@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270114T100000
+DTEND;TZID=Europe/Berlin:20270114T113000
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951270@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270112T081500
+DTEND;TZID=Europe/Berlin:20270112T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951273@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270114T081500
+DTEND;TZID=Europe/Berlin:20270114T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951312@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270114T114500
+DTEND;TZID=Europe/Berlin:20270114T131500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953961@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270114T100000
+DTEND;TZID=Europe/Berlin:20270114T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953919@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270112T114500
+DTEND;TZID=Europe/Berlin:20270112T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953922@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270113T100000
+DTEND;TZID=Europe/Berlin:20270113T113000
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953997@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270114T114500
+DTEND;TZID=Europe/Berlin:20270114T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K139 (CIP-Pool - 24 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K139 (CIP-Pool - 24 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5959949@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270113T114500
+DTEND;TZID=Europe/Berlin:20270113T131500
+SUMMARY:IM_SUS (Sustainability)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_SUS (Sustainability)\nLecturer: Comi\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_SUS_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960507@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270113T154500
+DTEND;TZID=Europe/Berlin:20270113T171500
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_2\nLesson info: [2]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960546@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270112T140000
+DTEND;TZID=Europe/Berlin:20270112T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960585@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270113T140000
+DTEND;TZID=Europe/Berlin:20270113T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K018 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K018 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1_1\nLesson info: [1]
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966743@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270111T140000
+DTEND;TZID=Europe/Berlin:20270111T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966746@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270111T154500
+DTEND;TZID=Europe/Berlin:20270111T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5951276@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270119T081500
+DTEND;TZID=Europe/Berlin:20270119T094500
+SUMMARY:IM_MA1 (Mathematik 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_MA1 (Mathematik 1)\nLecturer: Wma\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_MA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5953925@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270119T114500
+DTEND;TZID=Europe/Berlin:20270119T131500
+SUMMARY:IM_PG1 (Programmieren 1)
+LOCATION:K003 (Hörssal - 55 - IM)
+DESCRIPTION:Subject: IM_PG1 (Programmieren 1)\nLecturer: Dot\nRoom: K003 (Hörssal - 55 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_PG1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5960549@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270119T140000
+DTEND;TZID=Europe/Berlin:20270119T153000
+SUMMARY:IM_BA (Business Administration)
+LOCATION:K016 (Hörsaal - 75 - IM)
+DESCRIPTION:Subject: IM_BA (Business Administration)\nLecturer: Fea\nRoom: K016 (Hörsaal - 75 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_BA_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966749@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270118T140000
+DTEND;TZID=Europe/Berlin:20270118T153000
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:untis-5966752@webuntis
+DTSTAMP:20261106T105003Z
+DTSTART;TZID=Europe/Berlin:20270118T154500
+DTEND;TZID=Europe/Berlin:20270118T171500
+SUMMARY:IM_LTA1 (Language Track 1 (German))
+LOCATION:K002 (Hörsaal - 61 - IM)
+DESCRIPTION:Subject: IM_LTA1 (Language Track 1 (German))\nLecturer: Scsh\nRoom: K002 (Hörsaal - 61 - IM)\nClass: ICS1 (Bachelor ICS1)\nGroup: IM_LTA1_ICS1
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
